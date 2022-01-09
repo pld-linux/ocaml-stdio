@@ -45,7 +45,7 @@ używających biblioteki stdio.
 
 %package devel
 Summary:	Standard IO library for OCaml - development part
-Summary(pl.UTF-8):	Biblioteka standardowego we/wy dla OCamla - cześć programistyczna
+Summary(pl.UTF-8):	Biblioteka standardowego we/wy dla OCamla - część programistyczna
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	ocaml-base-devel >= 0.14
