@@ -73,7 +73,7 @@ dune install --destdir=$RPM_BUILD_ROOT
 # sources
 %{__rm} $RPM_BUILD_ROOT%{_libdir}/ocaml/stdio/*.ml
 # packaged as %doc
-%{__rm} -r $RPM_BUILD_ROOT%{_prefix}/doc/stdio
+%{__rm} -r $RPM_BUILD_ROOT%{_docdir}/stdio
 
 %clean
 rm -rf $RPM_BUILD_ROOT
