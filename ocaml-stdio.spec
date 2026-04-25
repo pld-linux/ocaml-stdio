@@ -10,17 +10,16 @@
 Summary:	Standard IO library for OCaml
 Summary(pl.UTF-8):	Biblioteka standardowego we/wy dla OCamla
 Name:		ocaml-stdio
-Version:	0.14.0
-Release:	2
+Version:	0.17.0
+Release:	1
 License:	MIT
 Group:		Libraries
 #Source0Download: https://github.com/janestreet/stdio/releases
 Source0:	https://github.com/janestreet/stdio/archive/v%{version}/stdio-%{version}.tar.gz
-# Source0-md5:	ee81f65acbab0ac762181aa6ceb926b1
+# Source0-md5:	89d07aed2f40cd6ee4db9ea37b5805e9
 URL:		https://github.com/janestreet/stdio
 BuildRequires:	ocaml >= 1:4.04.2
 BuildRequires:	ocaml-base-devel >= 0.14
-BuildRequires:	ocaml-base-devel < 0.15
 BuildRequires:	ocaml-dune-devel >= 2.0.0
 %requires_eq	ocaml-runtime
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -80,7 +79,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc CHANGES.md LICENSE.md README.org
+%doc CHANGES.md LICENSE.md README.md
 %dir %{_libdir}/ocaml/stdio
 %{_libdir}/ocaml/stdio/META
 %{_libdir}/ocaml/stdio/*.cma
